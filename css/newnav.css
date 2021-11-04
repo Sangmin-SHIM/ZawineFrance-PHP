@@ -1,0 +1,375 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-list{
+    font-family: 'Roboto', sans-serif;
+    font-size:10px;
+}
+
+.bodynewnav{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Header */
+.newnav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-nav{
+    width: 100%;
+    max-width: 117rem;
+    margin: 0 auto;
+    background-color: #820000;
+    border-radius: 10px;
+    padding:0 1.5rem;
+    height: 80px;
+} 
+
+.menu-icons{
+    color: #820000;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1500;
+    display: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+    background-color: #eb3007;
+    display:flex; 
+    border-radius:100%;
+    margin-right:5rem;
+}
+
+.logo i{
+    margin: auto; 
+    font-size: 3rem;
+    color:#eee;
+}
+
+.nav-list{
+    display:flex;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-list li{
+    line-height: 8rem;
+    position: relative;
+}
+
+.sub-menu li{
+    line-height: 4rem;
+}
+
+ul.nav-list{
+    margin-bottom:0px;
+    padding-bottom: 45px;
+}
+
+
+.nav-list a{
+    display:block;
+    justify-content: center;
+    color: #fff;
+    padding-left: 2.5rem;
+    padding-right:3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 650ms;
+}
+
+.nav-list a:hover{
+    color: #ffd760;
+}
+
+.move-a{
+    color: #820000 !important;
+}
+.move-right{
+    padding: 1.3rem;
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid ffd760;
+    border-radius: 5rem;
+    transition: background-color 650ms;
+}
+
+.move-right:hover{
+    color: #ffab00;
+    background-color: #ffab00;
+}
+
+.sub-menu{
+    width: 20rem;
+    display:block;
+    position: absolute;
+    border-top: 3px solid #ffd760;
+    background-color: #191919;
+    z-index: 100;
+    top: 16rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 605ms ease;
+}
+
+.sub-menu::before{
+    content: "";
+    position: absolute;
+    top: -2.5rem;
+    left: 3rem;
+    border: 1.2rem solid transparent; 
+    border-bottom-color: #ffd760;
+}
+
+.sub-menu .sub-menu::before{
+    top: .9rem;
+    left: -2.5rem;
+    border: 1.2rem solid transparent;
+    border-right-color: #ffd760;
+}
+
+.sub-menu .sub-menu{
+    border-top: none;
+    border-left: 3px solid #ffd760;
+    top:0;
+    left: 160%;
+}
+
+
+.nav-list li:hover > .sub-menu{
+    top: 8rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-menu li:hover > .sub-menu{
+    top:0;
+    left: 100%;    
+}
+
+li.move-right{
+    margin: auto 0 auto auto;
+    line-height: initial;
+}
+
+/* My Part Sangmin */
+
+.login{
+	text-align: left;
+    color: #820000;
+    margin-top: 0px !important;
+}
+
+.px-a{
+	padding-right: 1.5rem!important;
+	margin-left: 0.5rem;
+}
+
+.px-b{
+	padding-left: 2rem!important;
+	margin-right: 1rem;
+}
+
+.iconbtn{
+	color : #820000;
+	width: 40px;
+	height: 40px;
+	margin: 3px;
+	font-size: 20px;
+	position: relative;
+	border-radius: 50%;
+}
+
+.iconbtn::before{
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+
+}
+
+.iconbtn::after{
+	content:'';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-radius: 50%;
+	z-index: 0;
+}
+
+.s1 .iconbtn{
+	border: 2px solid #820000;
+	color: #fff;
+}
+
+.s1 .iconbtn::after{
+	background: #820000;
+	transition: 0.2s;
+}
+.s1 .iconbtn:hover::after{
+	transform: scale(.9);
+}
+
+.sangmin{
+	float:right;
+	height:40px;
+}
+
+
+/* /My Part Sangmin */
+
+
+
+
+@media screen and (max-width: 1095px) {
+    .login {
+        text-align: left;
+        color: #820000;
+        margin-top: 0px !important;
+        padding-top: 50px;
+    }    
+    
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    
+    .s1{
+        margin-bottom: 30px;
+    }
+
+    .nav-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 120vh;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #191919;
+        z-index: 1000;
+        overflow-y:scroll;
+    }
+
+    .move-a{
+        padding-left: 3% !important;
+        padding-right: 3% !important;
+    }
+
+    .nav-list a{
+        display:block;
+        justify-content: center;
+        color: #fff;
+        padding-left: 2.5rem;
+        padding-right:0rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        transition: color 650ms;
+    }
+
+
+    .nav-list > li{
+        line-height: 6rem;
+      
+        }
+
+    .container-nav{
+        background-color: white;
+        border-radius: 10px;
+        margin-left: 30px;        
+    }
+
+    .sub-menu{
+        position: initial;
+        border:3px solid transparent;
+        border-left-color: #ffd760;
+        margin-left: 1rem;
+        max-height: 0;
+    }
+
+    .sub-menu .sub-menu{
+        border-top: none;
+        border-left: 3px solid #ffd760;
+        top:0;
+        margin:10px;
+        left: 150%;
+    }
+
+    .sub-menu::before{
+        display:none;
+    }
+
+    .nav-list li:hover > .sub-menu{
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+
+    li.move-right{
+        margin: 0 auto 0 0;
+        line-height: initial;
+        margin-left: 30px;
+    }
+
+    .menu-icons{
+        display: block;
+        margin-top:20px;
+        margin-left: 10px;
+    }
+
+    .fas.fa-times{
+        display: none;
+    }
+
+    nav.active .fas.fa-times{
+        display: block;
+        margin-bottom: 130px !important;
+    }
+
+    nav.active .fas.fa-bars{
+        display: none;
+    
+    }
+
+    nav.active .nav-list{
+        display: flex;
+    }
+}

@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: #820000;
+    padding-bottom:.5rem;
+
+}
+
+nav a
+{
+    position: relative;
+    margin: 0 20px;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav #marker{
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background: #fff;
+    bottom: 1px;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
