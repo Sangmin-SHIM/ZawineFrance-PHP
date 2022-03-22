@@ -1,9 +1,10 @@
 # ZawineFrance-PHP
 ZawineFrance
 
-Le site web (vente du vin) réalisé par HTML, CSS, JS et PHP en 2018 - 2019 lors de mon premier stage chez Zawine France (6 semaines).
-Il s'agit de Page d'accueil, page de produits - grands crus, vins de moins de 40 euros -, page d'évènement, blog et page panier pour paiement (avec API Stripe).
-Toutes les formulaires que le client remplit seront stockés dans la base de données MySQL.
+Lors de mon stage chez Zawine France ( 6 semaines, de 2018 à 2019) j'ai réalisé un site Web destiné à la vente de vins en ligne. Pour cela j'ai utilisé les outils suivants: html, CSS, JS, et PHP.
+Le site présente une page d'accueil, plusieurs pages de produits ( gamme variée en vins et grands crus), une page "événements" , un "blog", et enfin une page "panier" pour que les clients puissent finaliser leurs achats avec API stripe. 
+Tous les formulaires remplis par les clients sont stockés dans la base de données MySQL.
+
 
 <br>
 <h3>1. Page D'accueil</h3>
